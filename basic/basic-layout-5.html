@@ -6,7 +6,28 @@
     <title>Basic Layout 5</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+     body{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 2fr 2fr 2fr 2fr;
+      grid-gap: 20px;
+     }
+     header{
+      grid-column-start: 2;
+      grid-column: 2 / 5;
+    }
+    nav{
+      grid-column-start: 1;
+      grid-column: 1 / 4;
+    }
+    main{
+      grid-column-start: 2;
+      grid-column: 2 / 5;
+    }
+    footer{
+      grid-column-start: 2;
+      grid-column: 2 / 5;
+    }
     </style>
   </head>
   <body id="basic-layout-5">
